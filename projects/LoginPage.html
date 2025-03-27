@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+       font-family: 'Courier New', Courier, monospace;
+       background-color: gray;
+       text-align: center;
+      }
+      #container{
+        width: 40%;
+        margin: auto;
+        padding: 10px;
+        background-color: aqua;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+      }
+      h2{
+        background-color: bisque;
+        padding: 5px;
+        border-radius: 10px;
+        color: brown;
+      }
+      form{
+        text-align: left;
+        margin: auto;
+        width: 80%;
+
+      }
+      .ff{
+        margin-bottom: 15px;
+      }
+      label{
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input{
+        width: 100%;
+        padding: 8px;
+        border: 2px solid grey;
+        border-radius: 10px;
+      }
+
+      button{
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: blueviolet;
+        border: none;
+        
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Instagram Registraction</h2>
+      <form method="POST">
+        <div class="ff">
+          FirstName:<label for="FirstName"></label>
+          <input
+            type="text"
+            name="FirstName"
+            placeholder="Enter Your FirstName"
+            required
+            pattern="[a-zA-Z]"
+            {6,15}
+        />
+      </div>
+
+      <div class="ff">
+        LastName:<label for="lastName"></label>
+        <input
+          type="text"
+          name="LastName"
+          placeholder="Enter Your LastName"
+          required
+          pattern="[a-zA-Z]"
+          {6,15}
+        />
+      </div>
+      <div class="ff">
+        Email or Phone:<label for="email or Phone"></label>
+        <input
+          type="email"
+          type="Number or email"
+          name="LastName"
+          placeholder="Enter Your Mobile or Email"
+          required
+        />
+      </div>
+      <div class="ff">
+        Password:<label for="password"></label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Your Password"
+          required
+          pattern="[a-zA-Z0-9@#$%^&*!]"
+          {6,15}
+        />
+      </div>
+        <button class="signin">Sign-Up</button>
+        <hr />
+        <button class="login">Login</button>
+      </form>
+  </body>
+</html>

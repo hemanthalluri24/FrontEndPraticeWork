@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .container {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+      }
+      h1 {
+        color: green;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      h3 {
+        color: red;
+      }
+      form {
+        text-align: left;
+        margin: auto;
+        width: 80%;
+      }
+      .sir {
+        margin-bottom: 15px;
+      }
+      label {
+        font-weight: 100%;
+        padding: 8%;
+      }
+      input {
+        width: 100%;
+        padding: 5px;
+        background-color: aqua;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 3px;
+        margin-top: 3px;
+      }
+      button {
+        width: 100%;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div><h1>Fligth Ticket Booking</h1></div>
+      <div><h3>Before Submit Once Check Your Details</h3></div>
+      <form method="GET">
+        <div class="sir">
+          Full Name(As per PAN):<label for="firstname"></label>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Enter Your First Name"
+            required
+            pattern="[A-Za-Z]{2,15}"
+            size="20"
+          />
+          Age:<label for="age"></label>
+          <input
+            type="number"
+            name="age"
+            placeholder="Enter Your Age"
+            required
+            min="2"
+            max="60"
+          />
+          Marital Status:
+          <input type="radio" name="marital_status" value="Married" />
+
+          <input type="radio" name="marital_status" value="UnMarried" />
+
+          FromLocation:<label for="from"></label>
+          <input
+            type="text"
+            name="from"
+            placeholder="Enter Your Starting Location"
+            required
+          />
+          SocialMediaUrl:<label for="SocialMediaUrl"></label>
+          <input
+            type="url"
+            name="SocialMediaUrl"
+            placeholder="Not An Manderatory"
+          />
+
+          Email:<label for="mail"></label>
+          <input
+            type="email"
+            name="email"
+            requried
+            placeholder="Enter your Email"
+          />
+          Upload Your Selfie:<label for="selfie"></label>
+          <input type="file" name="upload" multiple accept=".jpg,.pdf" />
+
+          MobileNumber:<label for="mobile"></label>
+          <input
+            type="number"
+            name="phone number"
+            placeholder="Enter Your Mobile Number"
+            required
+          />
+          Occupation:
+          <input type="checkbox" value="Job" /> Job
+          <input type="checkbox" value="Business" /> Business
+          <input type="checkbox" value="self Employed" /> self Employed
+          <input type="checkbox" value="Student" /> Student
+        </div>
+        <div><button>Submit</button></div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amazon.in</title>
+    <style>
+      .container {
+        border: 1px solid grey;
+        padding: 40px;
+        height: 300px;
+        width: 300px;
+        justify-content: center;
+        margin: auto;
+        border-radius: 10px;
+        background-color: antiquewhite;
+      }
+      h2 {
+        font-family: sans-serif;
+        font-weight: lighter;
+      }
+      label {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .forms {
+        margin-bottom: 15px;
+      }
+      button {
+        width: 100%;
+        height: 40%;
+        border-radius: 20px;
+        background-color: lightgreen;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 15px;
+      }
+      .image-size {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+      }
+      input {
+        width: 100%;
+        margin-top: 15px;
+        padding: 5px;
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      footer p {
+        margin: 2px 0;
+        line-height: 1.2;
+      }
+      .data h3 {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-size">
+      <img
+        src="../assets/amazon img.jpg"
+        alt="amazom.img"
+        height="50"
+        width="150"
+      />
+    </div>
+    <div class="container">
+      <h2>Sign in or create account</h2>
+      <form method="GET">
+        <div class="forms">
+          <label>Enter Mobile number or email :</label>
+          <div>
+            <input type="text" name="data" required />
+          </div>
+        </div>
+        <div class="forms">
+          <button class="btn">Continue</button>
+        </div>
+      </form>
+      <div class="forms">
+        <p>
+          By Continuing,you agree to Amazon's
+          <a href="#">Conditions of Use</a> and<a href="#"> Privacy Notice</a>
+        </p>
+      </div>
+      <div>
+        <hr />
+      </div>
+      <div class="data">
+        <h3 style="font-family: sans-serif">Buying for work?</h3>
+        <a href="#">Shop on Amazon Business</a>
+      </div>
+    </div>
+    <div>
+      <hr />
+    </div>
+    <div>
+      <footer>
+        <p>
+          <a href="#">Conditions of Use</a> | <a href="#">Privacy Policy</a> |
+          <a href="#">Help</a>
+        </p>
+        <p>&copy; 1996-2025 ,Amazon.com, Inc. or its affiliates</p>
+      </footer>
+    </div>
+  </body>
+</html>

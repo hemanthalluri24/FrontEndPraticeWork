@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .container {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+      }
+      h1 {
+        color: green;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      h3 {
+        color: red;
+      }
+      form {
+        text-align: left;
+        margin: auto;
+        width: 80%;
+      }
+      .sir {
+        margin-bottom: 15px;
+      }
+      label {
+        font-weight: 100%;
+        padding: 8%;
+      }
+      input {
+        width: 100%;
+        padding: 5px;
+        background-color: aqua;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 3px;
+        margin-top: 3px;
+      }
+      button {
+        width: 100%;
+        background-color: yellow;
+      }
+      .checkbox-conatiner {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div><h1>Job Portal</h1></div>
+      <form method="GET">
+        <div class="sir">
+          FirstName:<label for="firstname"></label>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Enter Your First Name"
+            required
+            pattern="[A-Za-Z]{2,15}"
+            size="20"
+          />
+          LastName:<label for="lastname"></label>
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Enter Your Last Name"
+            required
+            pattern="[A-Za-Z]{2,15}"
+            size="20"
+          />
+          D.O.B:<label for="dob"></label>
+          <input type="date" name="date" requried />
+
+          MobileNumber:<label for="mobile"></label>
+          <input
+            type="number"
+            name="phone number"
+            placeholder="Enter Your Mobile Number"
+            required
+          />
+          Experience(years):<label for="Experience"></label>
+          <input
+            type="number"
+            name="Experience"
+            min="0"
+            max="5"
+            value="0"
+            required
+          />
+          Previous Organization:<label for="Organization"></label>
+          <input type="text" name="Organization" required />
+
+          Upload Resume: <label for="resume"></label>
+          <input type="file" accept=".jpg,.pdf" multiple />
+
+          Git url:<label for="url"></label>
+          <input type="url" name="url" required />
+
+          <label for="Skills">Skills:</label>
+          <select id="skills" name="skills">
+            <option value="java">Java</option>
+            <option value="java">Python</option>
+            <option value="java">React</option>
+            <option value="java">Js</option>
+          </select>
+        </div>
+        <div class="checkbox-conatiner">
+          <input type="checkbox" id="accept" />
+          <lable for="accept">I Accept</lable>
+        </div>
+        <div><button>Submit</button></div>
+      </form>
+    </div>
+  </body>
+</html>
